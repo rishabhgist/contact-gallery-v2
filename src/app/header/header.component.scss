@@ -1,0 +1,12 @@
+.header{
+    background-color: #76c893;
+    color: white;
+    font-family: 'Pacifico', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+
+    &-title{
+        font-size: 35px;
+        user-select: none;
+    }
+}
