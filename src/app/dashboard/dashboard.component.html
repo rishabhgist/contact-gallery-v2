@@ -1,7 +1,7 @@
 <div class="dashboard">
+    <h2>Your Contacts</h2>
     <div class="dashboard-contacts">
-        <h2>Your Contacts</h2>
-        <div *ngFor="let contact of contacts">
+        <div class="dashboard-contact" *ngFor="let contact of contacts">
             <app-card [contact]="contact"></app-card>
         </div>
     </div>
