@@ -7,6 +7,7 @@
     border-radius: 25px;
     box-shadow: 5px 5px 15px -4px #52B69A;
     cursor: pointer;
+    user-select: none;
 
     &-initial{
         border-radius: 50%;
