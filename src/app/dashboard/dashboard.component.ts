@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CONTACTS } from '../model/contacts';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+
+  contacts = CONTACTS;
 
   constructor() { }
 
