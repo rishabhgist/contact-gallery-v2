@@ -1,0 +1,34 @@
+form{
+    margin: 20px;
+    padding: 30px 20px;
+    display: felx;
+    flex-direction: column;
+
+    &-element{
+        margin: 20px 0;
+    }
+
+    & label{
+        display: block;
+    }
+    
+    & input {
+        display: block;
+        margin: 10px 0;
+        outline: none;
+        border: 1px solid #52B69A;
+        height: 30px;
+        padding-left: 10px;
+        width: 70%;
+    }
+
+    & button{
+        width: 120px;
+        height: 35px;
+        background-color: #52B69A;
+        color: #ffff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}

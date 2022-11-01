@@ -1,8 +1,11 @@
+<h2>Your Contacts</h2>
 <div class="dashboard">
-    <h2>Your Contacts</h2>
-    <div class="dashboard-contacts">
-        <div class="dashboard-contact" *ngFor="let contact of contacts">
-            <app-card [contact]="contact"></app-card>
+        <div class="dashboard-contacts">
+            <div class="dashboard-contact" *ngFor="let contact of contacts">
+                <app-card [contact]="contact"></app-card>
+            </div>
         </div>
-    </div>
+        <div class="dashboard-view">
+            <app-details></app-details>
+        </div>
 </div>
