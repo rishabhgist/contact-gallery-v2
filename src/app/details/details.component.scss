@@ -23,12 +23,17 @@ form{
     }
 
     & button{
-        width: 120px;
+        width: 170px;
         height: 35px;
         background-color: #52B69A;
         color: #ffff;
+        margin-top: 20px;
         outline: none;
         border: none;
         cursor: pointer;
+        transition: .2s;
+    }
+    & button:active{
+        transform: translateY(5px);
     }
 }
