@@ -1,5 +1,25 @@
 {
-  "posts": [
-    
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Little",
+      "lastName": "Deleon",
+      "email": "littledeleon@corporana.com",
+      "contactNo": "+1 (955) 552-2825"
+    },
+    {
+      "id": 2,
+      "firstName": "Queen",
+      "lastName": "Butler",
+      "email": "queenbutler@corporana.com",
+      "contactNo": "+1 (937) 473-2813"
+    },
+    {
+      "id": 3,
+      "firstName": "Ellison",
+      "lastName": "Burnett",
+      "email": "ellisonburnett@corporana.com",
+      "contactNo": "+1 (960) 492-3520"
+    }
   ]
 }
