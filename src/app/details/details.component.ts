@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CONTACTS } from '../model/contacts';
+import { Contact } from '../model/contact';
+import { ContactService } from '../service/contact.service';
 
 @Component({
   selector: 'app-details',
@@ -7,9 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  contacts:Contact={}
+
+
+  constructor(private contactService:ContactService ) { }
 
   ngOnInit(): void {
   }
 
+  addContact(){
+    if(this.contacts.firstName){
+      this.contactService.addContact(this.contacts).subscribe(
+        {next(x) {alert("Contact Succesfully Added!")},
+      error(){alert("Error Occured")
+      }}
+      )
+    }
+    this.clearForm
+  }
+  viewContacts(){
+    this.contactService.getContacts().subscribe(value=>this.contacts)
+  }
+  clearForm(){
+    this.contacts={}
+  }
 }

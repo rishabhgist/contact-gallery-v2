@@ -20,6 +20,20 @@
       "lastName": "Burnett",
       "email": "ellisonburnett@corporana.com",
       "contactNo": "+1 (960) 492-3520"
+    },
+    {
+      "firstName": "Barack",
+      "lastName": "Obama",
+      "email": "BarryObama@gmail.com",
+      "contactNo": "12345678",
+      "id": 4
+    },
+    {
+      "firstName": "Sneha",
+      "lastName": "Shinde",
+      "email": "snehashinde800@gmail.com",
+      "contactNo": "+917057615610",
+      "id": 5
     }
   ]
 }

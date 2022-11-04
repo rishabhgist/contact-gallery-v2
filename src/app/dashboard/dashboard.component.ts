@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CONTACTS } from '../model/contacts';
+import { ContactService } from '../service/contact.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,5 +15,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+ 
 
 }

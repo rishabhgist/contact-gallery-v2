@@ -3,20 +3,20 @@
     <form>
        <div class="form-element">
             <label for="firstName">First Name:</label>
-            <input type="text" name="firstName">
+            <input type="text" name="firstName" [(ngModel)]="contacts.firstName">
        </div>
        <div class="form-element">
-            <label for="firstName">Last Name:</label>
-            <input type="text" name="lastName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" [(ngModel)]="contacts.lastName">
         </div>
         <div class="form-element">
-            <label for="firstName">Email:</label>
-            <input type="text" name="firstName">
+            <label for="email">Email:</label>
+            <input type="text" name="email" [(ngModel)]="contacts.email">
         </div>
         <div class="form-element">
-            <label for="firstName">Contact Number:</label>
-            <input type="text" name="contactNo">
+            <label for="contactNo">Contact Number:</label>
+            <input type="text" name="contactNo" [(ngModel)]="contacts.contactNo">
         </div>
-        <button type="button">Save</button>
+        <button type="button" (click)="addContact()">Save</button>
     </form> 
 </div>
