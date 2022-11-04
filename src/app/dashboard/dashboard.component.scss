@@ -4,7 +4,7 @@
 
     &-contacts{
         display: grid;
-        grid-template-columns: min-content min-content max-content;
+        grid-template-columns: min-content min-content;
         gap: 30px;
         width: 70%;
     }
