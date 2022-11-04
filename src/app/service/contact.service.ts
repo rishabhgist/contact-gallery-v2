@@ -6,4 +6,5 @@ import { Injectable } from '@angular/core';
 export class ContactService {
   URL:string="http://localhost:3000/contacts"
   constructor() { }
+  
 }

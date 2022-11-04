@@ -6,6 +6,8 @@ import { CardComponent } from './card/card.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DetailsComponent } from './details/details.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,14 @@ import { DetailsComponent } from './details/details.component';
     HeaderComponent,
     DashboardComponent,
     DetailsComponent
+    
+   
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
