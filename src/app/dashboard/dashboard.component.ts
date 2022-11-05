@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contact } from '../model/contact';
 import { CONTACTS } from '../model/contacts';
 import { ContactService } from '../service/contact.service';
 
@@ -9,13 +10,16 @@ import { ContactService } from '../service/contact.service';
 })
 export class DashboardComponent implements OnInit {
 
-  contacts = CONTACTS;
+  contacts:Contact[] = [];
 
-  constructor() { }
+  constructor(private service:ContactService) { }
 
   ngOnInit(): void {
+    this.getContacts();
   }
 
- 
+  getContacts() {
+    this.service.getContacts().subscribe(value=>this.contacts = value)
+  }
 
 }

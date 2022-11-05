@@ -14,6 +14,7 @@ export class ContactService {
   getContacts():Observable<Array<Contact>>{
     return this.httpClient.get<Array<Contact>>(this.URL)
   }
+  
   addContact(data:Contact){
     return this.httpClient.post(this.URL,data)
   }
