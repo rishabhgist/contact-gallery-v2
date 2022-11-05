@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CONTACTS } from '../model/contacts';
 import { Contact } from '../model/contact';
 import { ContactService } from '../service/contact.service';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @Component({
   selector: 'app-details',
@@ -13,7 +14,7 @@ export class DetailsComponent implements OnInit {
   contacts:Contact={}
 
 
-  constructor(private contactService:ContactService ) { }
+  constructor(private contactService:ContactService) { }
 
   ngOnInit(): void {
   }
@@ -26,11 +27,10 @@ export class DetailsComponent implements OnInit {
       }}
       )
     }
-    this.clearForm
+    this.clearForm()
+    window.location.reload();
   }
-  viewContacts(){
-    this.contactService.getContacts().subscribe(value=>this.contacts)
-  }
+ 
   clearForm(){
     this.contacts={}
   }

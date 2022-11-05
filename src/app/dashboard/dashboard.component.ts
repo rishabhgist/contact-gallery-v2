@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Contact } from '../model/contact';
-import { CONTACTS } from '../model/contacts';
 import { ContactService } from '../service/contact.service';
 
 @Component({

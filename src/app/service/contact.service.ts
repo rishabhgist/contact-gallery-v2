@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs';
 import { Contact } from '../model/contact';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +17,6 @@ export class ContactService {
   }
   
   addContact(data:Contact){
-    return this.httpClient.post(this.URL,data)
+    return this.httpClient.post(this.URL, data)
   }
 }
