@@ -4,9 +4,9 @@
 
     &-contacts{
         display: grid;
-        grid-template-columns: min-content min-content;
-        gap: 30px;
-        width: 70%;
+        grid-template-columns: min-content min-content min-content;
+        gap: 15px;
+        width: 65%;
     }
     
     &-view{
