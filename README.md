@@ -34,3 +34,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #
 
 ![](./contact.PNG)
+
+## Contributers
+<a href="https://github.com/sneh-shin" target="_blank">
+<img src="https://avatars.githubusercontent.com/u/113440419?v=4" width="60px"/>
+</a>
